@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Maria Cowdrey Portfolio</title>
+  <title>Maria Cowdrey</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,22 +12,6 @@
 </head>
 <body>
 
-
-  <!--Navigation
-  <nav class="white" role="navigation">
-
-    <div class="nav-wrapper container" >
-      <a id="logo-container" href="#" class="brand-logo">Maria Cowdrey</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Projects</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>-->
 
   <!--Side Nav -->
   <div class="nav-wrapper container" >
@@ -41,16 +25,25 @@
       <a href="#email"><span class="white-text email">cowdreymaria@gmail.com</span></a>
     </div></li>
   
-    <li><a class="subheader">Projects</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/vertical-slider" target="_blank">Vertical Slider</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/weather-dashboard" target="_blank">Weather Dashboard</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/Project1" target="_blank">Horoscopes Website</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/node-passport-login" target="_blank">Node Passport Login</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/BuyerBook" target="_blank">Book Club Website</a></li>
-    <li><a class="waves-effect" href="https://github.com/mariacowdrey/gym-outlet" target="_blank">Spartan E-commerce Website</a></li>
-    </ul>
+    <li><a class="subheader purple-text text-lighten-2">Projects</a></li>
+    <li><div class="divider"></div></li>
+
+    <li><a class="subheader purple-text text-lighten-3">Frontend</a></li>
+    <li><a class="waves-effect" href="https://github.com/mariacowdrey/vertical-slider" target="_blank">Vertical Slideshow</a></li>
+    <li><a class="waves-effect" href="https://github.com/mariacowdrey/live-user-filter" target="_blank">Live User Filter</a></li>
+    <li><a class="waves-effect" href="https://github.com/mariacowdrey/code-quiz" target="_blank">Code Quiz</a></li>
+    <li><div class="divider"></div></li>
+
+    <li><a class="subheader purple-text text-lighten-3">Backend</a></li>
+    <li><a class="waves-effect" href="https://github.com/mariacowdrey/e-commerce-back-end" target="_blank">E-commerce Backend</a></li>
+    <li><a class="waves-effect" href="https://github.com/mariacowdrey/mysql-employee-tracker" target="_blank">MySQL Employee Tracker</a></li>
+
+    <!-- <li><div class="divider"></div></li>
+
+    <li><a class="subheader purple-text text-lighten-3">Full Stack</a></li>-->
+    </ul> 
     
-    <a href="#" data-target="slide-out" class="sidenav-trigger purple-text text-lighten-2">
+    <a href="#" data-target="slide-out" class="sidenav-trigger purple-text text-lighten-1">
       <h5 class= "valign-wrapper">
       <i class="material-icons">more_vert</i>
        Maria Cowdrey
@@ -82,8 +75,8 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About Me</h4>
-          <p class="left-align light">Full Stack Web Developer with 6 years of Project Management experience in software development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi error sint unde nobis saepe sapiente, voluptatibus nam cum molestias optio aliquam repellat, quis iste eius repudiandae, asperiores dolore. Quod?
+          <h4 class="purple-text text-lighten-1">About Me</h4>
+          <p class="left-align light"> A Full Stack Web Developer with 7 years of Project Management experience in software development. Through my experience working in tech, I became very curious about creating applications of my own. I completed an intense coding bootcamp course to learn the MERN stack and graduated at the end of 2021. My goal is to break into a career as a developer. Check out what I've been working on, I've put together a list of my favorite projects in the sidenav. I'm always looking for new ideas and projects to work on so don't be shy about reaching out!
           </p>
         </div>
       </div>
@@ -167,7 +160,11 @@
     
     <div class="footer-copyright">
       <div class="container">
-      <a class="purple-text text-lighten-1">&copy; 2021 Maria Cowdrey</a>
+      <a class="purple-text text-lighten-1">&copy; 
+        <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      Maria Cowdrey</a>
       </div>
     </div>
   </footer>
